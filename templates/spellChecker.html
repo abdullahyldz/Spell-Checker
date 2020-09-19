@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spell Checker</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-indigo.css">
+    <link rel="stylesheet" href='./../static/main.css'/>
+
+</head>
+<body>
+    <div class="header">
+        <h2>SPELL CHECKER</h2>
+    </div>
+    <main>
+        <div id="input-form">
+            <form method="POST">
+              <label for="Enter an English word!">Word:</label>
+              <input type="text" id="input-word" name="input-word"><br><br>
+              <input type="submit" value="Submit">
+            </form>
+            {% if  incorrected_variable is not none  %}
+                <p>You entered : {{ incorrected_variable }} </p>
+                <p>Correct : {{ corrected_variable }} </p>
+            {% else %}
+                <p></p>
+            {% endif %}
+        </div>
+    </main>
+</body>
+</html>
