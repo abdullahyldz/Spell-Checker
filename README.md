@@ -10,7 +10,12 @@ Another [corpus](http://norvig.com/ngrams/spell-errors.txt) that represents numb
 
 Those candidates are sorted according to the scores in their P(w)*P(x|w) calculations.
 
-
 Spell Checker application is implemented with Flask, Python
 
 To render the webpage, Jinja templates are used with pure HTML, CSS
+
+### How to run
+
+1. Command `python main.py` to start the server
+
+2. Connect to `http://localhost:5000/`
