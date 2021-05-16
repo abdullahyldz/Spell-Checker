@@ -148,6 +148,8 @@ class SpellChecker:
 
 
     def getBestCandidate(self, misspelledWord):
+        if(misspelledWord in self.setOfTokens):
+            return misspelledWord
         bestCandidateScore = 0
         bestCandidate = misspelledWord
         candidates = self.getCandidates(misspelledWord)
